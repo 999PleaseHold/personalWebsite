@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans','Namun Gothic', 'sans-serif';
+  font-style: bole
+}
+
+body {
+  background: #0B0C10;
+  color: #C5C6C7
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.logo {
+  font-size:25px;
+  color: #C5C6C7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #0B0C10;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+.navbar a {
+  font-size: 18px;
+  color: #C5C6C7;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: #45A29E;
+}
+
+.home {
+  display:flex;
+  height: 100vh;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.home-stuff {
+  background:transparent;
+  max-width: 800px;
+  text-align: center; 
+  align-items: center;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.home-stuff h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  color: #66FCF1
+}
+
+
+.home-stuff h4 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size:20px;
+  font-weight: 600;
+  color: #C5C6C7;
+}
+
+.home-stuff p {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #C5C6C7;
+  margin-top: 15px;
+}
+
+.home-stuff p2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #C5C6C7;
+  margin-top: 8px;
+  display: block;
+  letter-spacing:0.5px;
+}
+
+.btn-box a {
+  position: relative;
+  margin-top:30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #45A29E;
+  border-radius: 0px;
+  font-size: 17px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #C5C6C7;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #45A29E;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover {
+  color: #0B0C10;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+
+.imagesbottom {
+  margin-bottom: 10px;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
