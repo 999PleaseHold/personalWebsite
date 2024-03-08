@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans','Namun Gothic', 'sans-serif';
-  font-style: bole
 }
 
 body {
   background: #0B0C10;
-  color: #C5C6C7
+  color: #C5C6C7;
+  font-family: 'Open Sans', 'Nanum Gothic', sans-serif;
+  font-style: normal;
 }
 
 .header {
@@ -26,11 +25,10 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-
 }
 
 .logo {
-  font-size:25px;
+  font-size: 25px;
   color: #C5C6C7;
   text-decoration: none;
   font-weight: 600;
@@ -45,70 +43,45 @@ body {
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
   color: #45A29E;
 }
 
 .mainstuff {
-  display:flex;
-  height: 100vh;
-  justify-content: left;
-  align-items: left;
-  margin-left: 20px;
+  margin-top: 70px; /* Adjusted margin to make space for the fixed header */
+  margin-bottom: 70px; /* Adjusted margin to make space for the fixed images at the bottom */
 }
 
+.mainstuff-text {
+  margin-left: 50px;
+  max-width: 800px;
+}
 
 .mainstuff-text h2 {
-  position: relative;
   font-size: 25px;
   font-weight: 700;
   color: #66FCF1;
   margin-top: 150px;
-  margin-left: 50px;
 }
 
-.mainstuff-text p {
-  position:relative;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color:#C5C6C7;
-  margin-top: 10px;
-  margin-left: 50px;
-  max-width: 800px;
-}
-
+.mainstuff-text p,
 .mainstuff-text p1 {
-  position:relative;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color:#C5C6C7;
+  color: #C5C6C7;
   margin-top: 10px;
-  margin-left: 50px;
-  max-width: 800px;
 }
 
 .imagesbottom {
-  display: flex; 
-  align-items: center; 
-}
-
-.imagesbottom img {
-  max-width: 100%; 
-  height: auto; 
-  margin-right: 20px; 
-}
-
-.imagesbottom {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
-  margin-left: 70px;
-  margin-bottom: 20px;
+  margin-top: 70px;
 }
+
 
 .imagesbottom img {
   max-width: 100%;
@@ -117,8 +90,5 @@ body {
 }
 
 .imagesbottom p {
-  margin: 0;
+  margin-left: 20px;
 }
-
-
-
